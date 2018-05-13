@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_contracts"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Контракты"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_wallets"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Кошельки"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_history"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="История"
+        app:showAsAction="ifRoom" />
+</menu>

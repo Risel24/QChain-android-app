@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/voteMethodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorInactive"
+        android:text="Тип голосования"
+        app:layout_constraintBottom_toTopOf="@+id/toggle"
+        app:layout_constraintStart_toStartOf="@+id/toggle" />
+
+    <RadioGroup
+        android:id="@+id/toggle"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/out_line"
+        android:checkedButton="@+id/offer"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/majority"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Мажоритарный"
+            android:textColor="@color/toggle_text_color" />
+
+        <RadioButton
+            android:id="@+id/cumulative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Кумулятивный"
+            android:textColor="@color/toggle_text_color" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/voteCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Количество голосов"
+        android:textColor="@color/colorInactive"
+        app:layout_constraintBottom_toTopOf="@+id/voteCountInput"
+        app:layout_constraintEnd_toEndOf="@+id/voteCountInput" />
+
+    <EditText
+        android:id="@+id/voteCountInput"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/out_line"
+        android:textColor="@color/disabled_text_color"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggle" />
+
+</android.support.constraint.ConstraintLayout>

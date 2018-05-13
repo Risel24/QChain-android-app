@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorInactive"
+        android:text="Дата начала"
+        app:layout_constraintBottom_toTopOf="@+id/startDateButton"
+        app:layout_constraintStart_toStartOf="@+id/startDateButton" />
+
+    <Button
+        android:id="@+id/startDateButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/out_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorInactive"
+        android:text="Дата конца"
+        app:layout_constraintBottom_toTopOf="@+id/endDateButton"
+        app:layout_constraintStart_toStartOf="@+id/endDateButton" />
+
+    <Button
+        android:id="@+id/endDateButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/out_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
